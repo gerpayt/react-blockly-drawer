@@ -87,11 +87,6 @@ var BlocklyDrawer = function (_Component) {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
       initTools(nextProps.tools);
-      this.workspacePlayground.clear();
-      if (nextProps.workspaceXML) {
-        var dom = _browser2.default.Xml.textToDom(nextProps.workspaceXML);
-        _browser2.default.Xml.domToWorkspace(dom, this.workspacePlayground);
-      }
     }
   }, {
     key: 'componentWillUnmount',

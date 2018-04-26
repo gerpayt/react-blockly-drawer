@@ -65,11 +65,11 @@ class BlocklyDrawer extends Component {
 
   componentWillReceiveProps(nextProps) {
     initTools(nextProps.tools);
-    this.workspacePlayground.clear();
-    if (nextProps.workspaceXML) {
-      const dom = Blockly.Xml.textToDom(nextProps.workspaceXML);
-      Blockly.Xml.domToWorkspace(dom, this.workspacePlayground);
-    }
+    // this.workspacePlayground.clear();
+    // if (nextProps.workspaceXML) {
+    //   const dom = Blockly.Xml.textToDom(nextProps.workspaceXML);
+    //   Blockly.Xml.domToWorkspace(dom, this.workspacePlayground);
+    // }
   }
 
   componentWillUnmount() {
